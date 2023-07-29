@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body {
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 75px;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header_logo {
+    display: flex;
+    align-items: flex-end;
+    gap: 41px;
+}
+
+.search {
+    fill: #E8E8E8;
+}
+
+.top {
+    background: #F1E4E6;
+    display: flex;
+}
+
+.top_img {
+    width: 50%;
+}
+
+.top_right {
+    width: 50%;
+    padding-left: 5%;
+    padding-top: 17%;
+}
+
+.brend_box {
+    width: 405px;
+    height: 93px;
+    display: flex;
+    gap: 16px;
+}
+
+.the_brand {
+    width: 377px;
+    height: 93px;
+    color: #222;
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.of_luxerious {
+    white-space: nowrap;
+    color: #222;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.fashion {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.mid {
+    padding-top: 65px;
+    padding-bottom: 60px;
+}
+
+.offer {
+    margin-bottom: 96px;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    justify-content: center;
+    gap: 30px;
+}
+
+.box {
+    position: relative;
+}
+
+.bg_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: rgba(33, 22, 22, 0.70);
+}
+
+.text_in_img {
+    max-width: 160px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.big {
+    grid-column: span 3;
+}
+
+.start {
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.end {
+    white-space: nowrap;
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.product {
+    display: grid;
+    gap: 48px;
+}
+
+.product_titl {
+    display: grid;
+    justify-items: center;
+    gap: 6px;
+}
+
+.product_title {
+    color: #222;
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.product_text {
+    color: #9F9F9F;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.product_list {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    justify-content: center;
+    gap: 30px;
+}
+
+.product_item {
+    position: relative;
+    background: #F8F8F8;
+}
+
+.bg_product {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.description {
+    padding: 24px 16px;
+    display: grid;
+    gap: 16px;
+}
+
+.subtitle {
+    color: #000;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.product_text {
+    color: #5D5D5D;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.price {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.product_button {
+    display: grid;
+    justify-content: center;
+}
+
+.button {
+    width: 212px;
+    height: 48px;
+    border-color: #FF6A6A;
+    color: #F26376;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+@media (max-width: 1024px) {
+    .the_brand {
+        font-size: 44px;
+    }
+
+    .of_luxerious, .fashion {
+        font-size: 24px;
+    }
+}
