@@ -248,4 +248,23 @@ a {
     .of_luxerious, .fashion {
         font-size: 24px;
     }
+
+    .offer {
+        margin-bottom: 110px;
+        grid-template-columns: repeat(3, 232px);
+        gap: 20px;
+    }
+
+    .offer_img {
+        width: 100%;
+    }
+
+    .product_titl {
+        gap: 3px;
+    }
+
+    .product_list {
+        grid-template-columns: repeat(2, 360px);
+        gap: 16px;
+    }
 }
