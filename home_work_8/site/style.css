@@ -33,7 +33,7 @@ a {
 .menu {
     background-image: url(img/desktop_menu.svg);
     width: 159px;
-    height: 29px;
+    height: 30px;
     color: #E8E8E8;
 }
 
@@ -279,7 +279,7 @@ a {
     .menu {
         background-image: url(img/mobile_menu.svg);
         width: 32px;
-        height: 23px;
+        height: 24px;
     }
 
     .top {
