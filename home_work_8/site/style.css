@@ -340,9 +340,4 @@ a {
         flex-direction: column;
         gap: 16px;
     }
-
-    .product_item {
-        position: relative;
-        background: #F8F8F8;
-    }
 }
