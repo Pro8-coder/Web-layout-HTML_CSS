@@ -110,6 +110,10 @@ a {
     line-height: normal;
 }
 
+.dropdown_link:hover {
+    color: #F16D7F;
+}
+
 .profile {
     background-image: url(img/profile.svg);
     width: 30px;
