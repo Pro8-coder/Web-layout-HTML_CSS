@@ -31,15 +31,81 @@ a {
 }
 
 .header_button {
+    position: relative;
     display: flex;
     gap: 25px;
 }
 
-.menu {
+.menu_button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.menu_img {
     background-image: url(img/menu.svg);
     width: 32px;
     height: 24px;
     color: #E8E8E8;
+}
+
+.menu_button:hover {
+    opacity: 1;
+}
+
+.dropdown_menu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: fit-content;
+    white-space: nowrap;
+    background-color: #fff;
+    padding-left: 32px;
+    padding-top: 32px;
+    padding-bottom: 21px;
+    padding-right: 32px;
+    display: none;
+}
+
+.menu_button:focus + .dropdown_menu,
+.dropdown_menu:focus-within {
+  display: block;
+}
+
+.dropdown_item {
+    margin-bottom: 11px;
+}
+
+.dropdown_menu_title {
+    padding-bottom: 4px;
+    color: #000;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.dropdown_menu_subtitle {
+    padding-top: 9px;
+    padding-bottom: 1px;
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dropdown_link {
+    color: #6F6E6E;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .profile {
@@ -172,7 +238,7 @@ a {
     gap: 48px;
 }
 
-.product_titl {
+.product_container {
     display: grid;
     justify-items: center;
     gap: 6px;
