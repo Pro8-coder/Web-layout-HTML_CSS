@@ -101,6 +101,7 @@ a {
 }
 
 .dropdown_link {
+    padding-left: 20px;
     color: #6F6E6E;
     font-family: Lato;
     font-size: 14px;
