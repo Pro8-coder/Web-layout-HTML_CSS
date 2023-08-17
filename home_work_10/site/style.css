@@ -600,6 +600,10 @@ a {
     background-color: #F16D7F;
 }
 
+.social_box:hover .social {
+    filter: invert(100%);
+}
+
 @media (max-width: 1024px) {
     .the_brand {
         font-size: 44px;
