@@ -67,6 +67,7 @@ a {
     padding-bottom: 21px;
     padding-right: 32px;
     display: none;
+    z-index: 10000;
 }
 
 .menu_button:focus + .dropdown_menu,
