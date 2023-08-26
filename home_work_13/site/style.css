@@ -7,6 +7,22 @@ a {
   text-decoration: none;
 }
 
+input {
+  outline: none;
+}
+
+.close {
+  padding-top: 28px;
+  padding-right: 22px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.price {
+  color: #f16d7f;
+}
+
 .header {
   position: relative;
   width: 100%;
@@ -128,7 +144,7 @@ a {
 .breadcrumb {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #f8f3f4;
+  background-color: #f1e4e6;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -159,16 +175,16 @@ a {
 }
 
 .top {
-  background: #f1e4e6;
   display: flex;
 }
 .top_img {
   width: 50%;
 }
 .top_right {
-  width: 50%;
   padding-left: 5%;
   padding-top: 17%;
+  width: 50%;
+  background: #f1e4e6;
 }
 
 .carousel {
@@ -276,6 +292,198 @@ a {
   line-height: normal;
   font-size: 32px;
   font-weight: 700;
+}
+
+.cart {
+  padding-top: 96px;
+  padding-bottom: 128px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8%;
+}
+.cart_content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.cart_item {
+  width: 652px;
+  height: 306px;
+  background: #fff;
+  display: flex;
+  filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13)) !important;
+}
+.cart_item_img {
+  width: 262px;
+  height: 306px;
+  background-color: #f1e4e6;
+}
+.cart_item_description {
+  width: 262px;
+  padding: 22px 56px 62px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.cart_item_name {
+  margin-bottom: 36px;
+  color: #222;
+  font-family: Lato;
+  font-style: normal;
+  line-height: normal;
+  font-size: 24px;
+  font-weight: 400;
+}
+.cart_item_info {
+  color: #656565;
+  font-family: Lato;
+  font-style: normal;
+  line-height: normal;
+  font-size: 18px;
+  font-weight: 400;
+}
+.cart_item_quantity {
+  margin-left: 24px;
+  padding: 1px 16px;
+  border: 1px solid #eaeaea;
+}
+.cart_box-button {
+  margin-top: 32px;
+  display: flex;
+  gap: 192px;
+}
+.cart_button {
+  width: 230px;
+  height: 50px;
+  background-color: transparent;
+  color: #000;
+  font-family: Lato;
+  font-style: normal;
+  line-height: normal;
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.cart_button:hover {
+  color: #f16d7f;
+  border-color: #f16d7f;
+}
+.cart_shipping {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+}
+.cart_price {
+  padding: 42px;
+  background-color: #f5f3f3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+.cart_price_sub-total {
+  color: #4a4a4a;
+  font-family: Lato;
+  font-style: normal;
+  line-height: normal;
+  font-size: 11px;
+  font-weight: 400;
+}
+.cart_price_grand-total {
+  margin-bottom: 24px;
+  color: #222;
+  font-family: Lato;
+  font-style: normal;
+  line-height: normal;
+  font-size: 16px;
+  font-weight: 300;
+}
+.cart_price_button {
+  width: 276px;
+  height: 50px;
+  color: #fff;
+  background-color: #f16d7f;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Lato;
+  font-style: normal;
+  line-height: normal;
+  font-size: 16px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.shipping {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.shipping_subtitle {
+  color: #222;
+  font-family: Lato;
+  font-style: normal;
+  line-height: normal;
+  font-size: 16px;
+  font-weight: 300;
+}
+.shipping_form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.shipping_inf {
+  padding-left: 16px;
+  width: 360px;
+  height: 45px;
+  box-sizing: border-box;
+  stroke-width: 1px;
+  stroke: #a4a4a4;
+  display: flex;
+}
+.shipping_inf::-moz-placeholder {
+  color: #222;
+  font-family: Lato;
+  font-style: normal;
+  line-height: normal;
+  font-size: 13px;
+  font-weight: 300;
+}
+.shipping_inf::placeholder {
+  color: #222;
+  font-family: Lato;
+  font-style: normal;
+  line-height: normal;
+  font-size: 13px;
+  font-weight: 300;
+}
+.shipping_inf:focus::-moz-placeholder {
+  color: #b1b1b1;
+}
+.shipping_inf:focus::placeholder {
+  color: #b1b1b1;
+}
+.shipping_button {
+  width: 101px;
+  height: 35px;
+  background-color: transparent;
+  color: #4a4a4a;
+  font-family: Lato;
+  font-style: normal;
+  line-height: normal;
+  font-size: 11px;
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shipping_button:hover {
+  color: #f16d7f;
+  border-color: #f16d7f;
 }
 
 .description {
@@ -425,6 +633,11 @@ a {
 .product {
   display: grid;
 }
+.product_description {
+  padding: 24px 16px;
+  display: grid;
+  gap: 16px;
+}
 .product_settings_box {
   position: relative;
 }
@@ -544,6 +757,14 @@ a {
   font-size: 14px;
   font-weight: 400;
 }
+.product_price {
+  color: #f16d7f;
+  font-family: Lato;
+  font-style: normal;
+  line-height: normal;
+  font-size: 16px;
+  font-weight: 400;
+}
 .product_list {
   display: grid;
   grid-template-columns: repeat(3, 360px);
@@ -613,12 +834,6 @@ a {
   fill: #f16d7f;
 }
 
-.product_description {
-  padding: 24px 16px;
-  display: grid;
-  gap: 16px;
-}
-
 .subtitle {
   color: #000;
   font-family: Lato;
@@ -635,15 +850,6 @@ a {
   line-height: normal;
   font-size: 14px;
   font-weight: 300;
-}
-
-.price {
-  color: #f16d7f;
-  font-family: Lato;
-  font-style: normal;
-  line-height: normal;
-  font-size: 16px;
-  font-weight: 400;
 }
 
 .product_button {
@@ -671,6 +877,29 @@ a {
 
 .bottom {
   width: 100%;
+}
+.bottom_left {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+  z-index: 1;
+}
+.bottom_left_text {
+  color: #222;
+  font-family: Lato;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+.bottom_right {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  z-index: 1;
 }
 
 .advantages {
@@ -720,6 +949,15 @@ a {
   font-weight: 300;
 }
 
+.subscribe {
+  color: #222;
+  font-family: Lato;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 167.2%;
+}
 .subscribe_background {
   min-height: 28vw;
   position: relative;
@@ -732,7 +970,6 @@ a {
   justify-content: space-around;
   align-items: center;
 }
-
 .subscribe_background::before {
   content: "";
   position: absolute;
@@ -742,42 +979,6 @@ a {
   left: 0;
   background: rgba(244, 244, 244, 0.6980392157);
 }
-
-.bottom_left {
-  max-width: 360px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 30px;
-  z-index: 1;
-}
-
-.bottom_left_text {
-  color: #222;
-  font-family: Lato;
-  font-style: normal;
-  line-height: normal;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.a_pulvinar {
-  color: #222;
-  font-family: Lato;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.bottom_right {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  z-index: 1;
-}
-
 .subscribe_text {
   color: #222;
   font-family: Lato;
@@ -787,21 +988,33 @@ a {
   font-weight: 400;
   line-height: 167.2%;
 }
-
-.subscribe {
-  color: #222;
+.subscribe_button {
+  width: 25%;
+  border: none;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+  background-color: #f16d7f;
+  color: #fff;
   font-family: Lato;
-  text-align: center;
-  font-size: 24px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 167.2%;
+  line-height: normal;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
 }
 
-.form_email {
-  width: 356px;
-  height: 49px;
-  display: flex;
+.a_pulvinar {
+  color: #222;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .email {
@@ -836,25 +1049,10 @@ a {
   display: flex;
   justify-content: flex-start;
 }
-
-.button_subscribe {
-  width: 25%;
-  border: none;
-  border-top-right-radius: 22px;
-  border-bottom-right-radius: 22px;
-  background-color: #f16d7f;
-  color: #fff;
-  font-family: Lato;
-  font-style: normal;
-  line-height: normal;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 400;
+.email_form {
+  width: 356px;
+  height: 49px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  cursor: pointer;
 }
 
 .footer {
