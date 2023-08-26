@@ -141,7 +141,7 @@ input {
   color: #f16d7f;
 }
 
-.breadcrumb {
+.breadcrumbs {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #f1e4e6;
@@ -149,7 +149,7 @@ input {
   justify-content: space-around;
   align-items: center;
 }
-.breadcrumb_title {
+.breadcrumbs_title {
   color: #f16d7f;
   font-family: Lato;
   font-style: normal;
@@ -157,7 +157,14 @@ input {
   font-size: 24px;
   font-weight: 400;
 }
-.breadcrumb_text {
+.breadcrumbs_ul {
+  list-style-type: none;
+  display: flex;
+}
+.breadcrumbs_li:not(:last-child)::after {
+  content: "/";
+  padding-left: 8px;
+  padding-right: 8px;
   color: #636363;
   font-family: Lato;
   font-style: normal;
@@ -165,13 +172,17 @@ input {
   font-size: 14px;
   font-weight: 300;
 }
-.breadcrumb_location {
+.breadcrumbs_li:last-child .breadcrumbs_link {
   color: #f16d7f;
+  font-weight: 700;
+}
+.breadcrumbs_link {
+  color: #636363;
   font-family: Lato;
   font-style: normal;
   line-height: normal;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .top {

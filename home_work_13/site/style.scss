@@ -144,7 +144,7 @@ input {
     }
 }
 
-.breadcrumb {
+.breadcrumbs {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $bgPalePink;
@@ -159,18 +159,31 @@ input {
         font-weight: 400;
     }
 
-    &_text {
+    &_ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+    &_li:not(:last-child)::after {
+        content: "/";
+        padding-left: 8px;
+        padding-right: 8px;
         color: #636363;
         @include text();
         font-size: 14px;
         font-weight: 300;
     }
 
-    &_location {
+    &_li:last-child .breadcrumbs_link {
         color: $colorSelectSite;
+        font-weight: 700;
+    }
+
+    &_link {
+        color: #636363;
         @include text();
         font-size: 14px;
-        font-weight: 700;
+        font-weight: 300;
     }
 }
 
