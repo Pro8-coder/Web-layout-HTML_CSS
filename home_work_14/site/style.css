@@ -201,6 +201,31 @@ input {
   width: 50%;
   background: #f1e4e6;
 }
+.top_right_brend {
+  width: 405px;
+  display: flex;
+  gap: 16px;
+}
+.top_right_the-brand {
+  color: #222;
+  font-family: Lato;
+  font-style: normal;
+  line-height: normal;
+  font-size: 48px;
+  font-weight: 900;
+}
+.top_right_of-luxerious {
+  white-space: nowrap;
+  color: #222;
+  font-family: Lato;
+  font-style: normal;
+  line-height: normal;
+  font-size: 32px;
+  font-weight: 700;
+}
+.top_right_fashion {
+  color: #f16d7f;
+}
 
 .carousel {
   width: 100%;
@@ -270,43 +295,6 @@ input {
 #item4:target ~ .item4 {
   z-index: 3;
   opacity: 1;
-}
-
-.brend_box {
-  width: 405px;
-  height: 93px;
-  display: flex;
-  gap: 16px;
-}
-
-.the_brand {
-  width: 377px;
-  height: 93px;
-  color: #222;
-  font-family: Lato;
-  font-style: normal;
-  line-height: normal;
-  font-size: 48px;
-  font-weight: 900;
-}
-
-.of_luxerious {
-  white-space: nowrap;
-  color: #222;
-  font-family: Lato;
-  font-style: normal;
-  line-height: normal;
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.fashion {
-  color: #f16d7f;
-  font-family: Lato;
-  font-style: normal;
-  line-height: normal;
-  font-size: 32px;
-  font-weight: 700;
 }
 
 .cart {
@@ -693,7 +681,7 @@ input {
 }
 
 .mid {
-  padding-bottom: 60px;
+  padding-bottom: 95px;
 }
 
 .offer {
@@ -998,6 +986,14 @@ input {
 .bottom {
   width: 100%;
 }
+.bottom_advantages {
+  min-height: 22vw;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
 .bottom_left {
   max-width: 360px;
   display: flex;
@@ -1015,20 +1011,19 @@ input {
   font-size: 20px;
   font-weight: 400;
 }
+.bottom_left_a-pulvinar {
+  color: #222;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
 .bottom_right {
   display: flex;
   flex-direction: column;
   gap: 32px;
   z-index: 1;
-}
-
-.advantages {
-  min-height: 22vw;
-  background-color: #222;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
 }
 
 .advantage {
@@ -1128,15 +1123,6 @@ input {
   cursor: pointer;
 }
 
-.a_pulvinar {
-  color: #222;
-  font-family: Lato;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: normal;
-}
-
 .email {
   width: 75%;
   border: none;
@@ -1196,7 +1182,6 @@ input {
   display: flex;
   gap: 7.3px;
 }
-
 .social_box {
   height: 32px;
   width: 32px;
@@ -1206,11 +1191,9 @@ input {
   justify-content: center;
   align-content: center;
 }
-
 .social_box:hover {
   background-color: #f16d7f;
 }
-
 .social_box:hover .social {
   filter: invert(100%);
 }
@@ -1223,15 +1206,21 @@ input {
   .empty {
     display: none;
   }
-  .the_brand {
+  .top_right_brend {
+    width: 311px;
+  }
+  .top_right_the-brand {
     font-size: 44px;
   }
-  .of_luxerious,
-  .fashion {
+  .top_right_of-luxerious, .top_right_fashion {
     font-size: 24px;
   }
+  .mid {
+    padding-bottom: 65px;
+  }
   .offer {
-    margin-bottom: 110px;
+    margin-top: 20px;
+    margin-bottom: 155px;
     grid-template-columns: repeat(3, 232px);
     gap: 20px;
   }
@@ -1248,10 +1237,8 @@ input {
   .bottom {
     height: 100%;
   }
-  .advantages {
-    padding-left: 30%;
-    padding-right: 30%;
-    padding-bottom: 8%;
+  .bottom_advantages {
+    padding-bottom: 64px;
     flex-direction: column;
   }
   .advantage {
@@ -1263,8 +1250,8 @@ input {
     align-items: center;
   }
   .subscribe_background {
-    padding-top: 7%;
-    padding-bottom: 16%;
+    padding-top: 64px;
+    padding-bottom: 140px;
     flex-direction: column;
     gap: 48px;
   }
@@ -1290,24 +1277,23 @@ input {
     align-items: center;
     justify-content: center;
   }
-  .brend_box {
+  .top_right_brend {
     width: 263px;
     height: 66px;
   }
-  .the_brand {
+  .top_right_the-brand {
     font-size: 38px;
   }
-  .of_luxerious,
-  .fashion {
+  .top_right_of-luxerious, .top_right_fashion {
     font-size: 20px;
   }
   .mid {
-    padding-bottom: 85px;
+    padding-bottom: 96px;
   }
   .offer {
+    margin: 64px 0px;
     padding-left: 16px;
     padding-right: 16px;
-    margin-bottom: 64px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -1326,21 +1312,23 @@ input {
     flex-direction: column;
     gap: 16px;
   }
-  .advantages {
-    padding-bottom: 16%;
+  .bottom_advantages {
+    padding-bottom: 20%;
   }
-  .bottom_left_text,
-  .a_pulvinar {
+  .bottom_left_text, .bottom_left_a-pulvinar {
     font-size: 18px;
   }
   .bottom_right {
     align-items: center;
   }
+  .subscribe_background {
+    padding-bottom: 26vw;
+  }
   .subscribe_text {
     font-size: 14px;
     line-height: 153.2%;
   }
-  .form_email {
+  .email_form {
     width: 90%;
   }
   .footer {
