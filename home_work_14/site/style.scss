@@ -367,7 +367,10 @@ input {
 
         &_quantity {
             margin-left: 24px;
-            padding: 1px 16px;
+            padding-left: 16px;
+            width: 44px;
+            height: 25px;
+            box-sizing: border-box;
             border: 1px solid #eaeaea;
         }
     }
@@ -382,6 +385,7 @@ input {
         width: 230px;
         height: 50px;
         background-color: transparent;
+        border: 1px solid #a4a4a4;
         color: #000;
         @include text();
         font-size: 14px;
@@ -482,6 +486,7 @@ input {
         width: 101px;
         height: 35px;
         background-color: transparent;
+        border: 1px solid #a4a4a4;
         color: #4a4a4a;
         @include text();
         font-size: 11px;
