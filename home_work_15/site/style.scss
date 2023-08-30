@@ -19,11 +19,16 @@ input {
 }
 
 .close {
-    padding-top: 28px;
-    padding-right: 22px;
+    display: flex;
+    margin-top: 28px;
+    margin-right: 22px;
     width: 18px;
     height: 18px;
     cursor: pointer;
+
+    &_767px {
+        display: none;
+    }
 }
 
 .price {
@@ -149,8 +154,7 @@ input {
 }
 
 .breadcrumbs {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 0px;
     background-color: $bgPalePink;
     display: flex;
     justify-content: space-around;
@@ -248,7 +252,7 @@ input {
     }
 
     &_box {
-        height: 720px;
+        height: 724px;
         margin-bottom: 42px;
         display: flex;
         justify-content: center;
@@ -320,11 +324,12 @@ input {
     &_content {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 40px;
     }
 
     &_item {
-        width: 652px;
+        width: 100%;
         height: 306px;
         background: $colorWhite;
         display: flex;
@@ -337,7 +342,7 @@ input {
         }
 
         &_description {
-            width: 262px;
+            width: 100%;
             padding: 22px 56px 62px 32px;
             display: flex;
             flex-direction: column;
@@ -355,7 +360,7 @@ input {
         &_info {
             color: #656565;
             @include text();
-            font-size: 18px;
+            font-size: 22px;
             font-weight: 400;
         }
 
@@ -495,13 +500,120 @@ input {
     }
 }
 
+.registration {
+    padding-top: 64px;
+    padding-bottom: 96px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 128px;
+
+    &_form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &_subtitle {
+        color: $colorBlack;
+        @include text();
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    &_item {
+        padding-left: 16px;
+        width: 360px;
+        height: 45px;
+        box-sizing: border-box;
+        color: #b1b1b1;
+        @include text();
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    &_gender {
+        color: #000;
+        @include text();
+        font-size: 11px;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &_circle {
+        width: 17px;
+        height: 17px;
+        stroke-width: 1px;
+        stroke: #a4a4a4;
+    }
+
+    &_text {
+        margin-bottom: 20px;
+        width: 360px;
+        color: #b1b1b1;
+        @include text();
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    &_button {
+        width: 167px;
+        height: 50px;
+        background-color: $colorSelectSite;
+        border-color: $colorSelectSite;
+        color: $colorWhite;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        @include flex();
+        gap: 20px;
+        cursor: pointer;
+    }
+
+    &_inf {
+        width: 652px;
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+        color: #000;
+        @include text();
+        font-size: 24px;
+        font-weight: 300;
+
+        &_item {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        &_str {
+            display: flex;
+            align-items: baseline;
+            gap: 22px;
+        }
+    }
+}
+
+.mid {
+    padding-bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .description {
     margin-top: -65px;
-    margin-left: 16%;
-    margin-right: 16%;
+    margin-bottom: 130px;
     padding: 65px;
+    width: 1140px;
     position: relative;
-    background: $colorWhite;
+    background-color: $colorWhite;
+    box-sizing: border-box;
+    border: 1px solid #eaeaea;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -582,108 +694,6 @@ input {
     }
 }
 
-.registration {
-    padding-top: 64px;
-    padding-bottom: 96px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 128px;
-
-    &_form {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-
-        &_subtitle {
-            color: $colorBlack;
-            @include text();
-            font-size: 16px;
-            font-weight: 300;
-        }
-
-        &_item {
-            padding-left: 16px;
-            width: 360px;
-            height: 45px;
-            box-sizing: border-box;
-            stroke-width: 1px;
-            stroke: #a4a4a4;
-            color: #b1b1b1;
-            @include text();
-            font-size: 13px;
-            font-weight: 300;
-        }
-
-        &_gender {
-            color: #000;
-            @include text();
-            font-size: 11px;
-            font-weight: 300;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        &_circle {
-            width: 17px;
-            height: 17px;
-            stroke-width: 1px;
-            stroke: #a4a4a4;
-        }
-
-        &_text {
-            margin-bottom: 20px;
-            width: 360px;
-            color: #b1b1b1;
-            @include text();
-            font-size: 13px;
-            font-weight: 300;
-        }
-
-        &_button {
-            width: 167px;
-            height: 50px;
-            background-color: $colorSelectSite;
-            border-color: $colorSelectSite;
-            color: $colorWhite;
-            font-family: Lato;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            @include flex();
-            gap: 20px;
-            cursor: pointer;
-        }
-    }
-
-    &_inf {
-        width: 652px;
-        display: flex;
-        flex-direction: column;
-        gap: 21px;
-        color: #000;
-        @include text();
-        font-size: 24px;
-        font-weight: 300;
-
-        &_item {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        &_check-mark {
-            margin-right: 22px;
-        }
-    }
-}
-
-.mid {
-    padding-bottom: 95px;
-}
-
 .offer {
     margin: 64px 0px 96px;
     @include grid();
@@ -732,22 +742,25 @@ input {
 }
 
 .product {
-    display: grid;
+    display: flex;
+    flex-direction: column;
 
     &_description {
-        padding: 24px 16px;
+        padding: 24px 29px 20px 16px;
         display: grid;
         gap: 16px;
     }
 
-    &_settings_box {
-        position: relative;
+    &_settings {
+        padding-top: 51px;
+        padding-bottom: 64px;
+        @include grid();
+        justify-content: normal;
+        align-items: center;
     }
 
-    &_settings {
-        height: 132px;
-        @include grid();
-        align-items: center;
+    &_settings_box {
+        position: relative;
     }
 
     &_filter {
@@ -782,8 +795,12 @@ input {
             color: $colorSelectSite;
         }
 
-        &_img {
+        &_desktop {
             fill: black;
+        }
+
+        &_767px {
+            display: none;
         }
 
         &:hover .product_filter_img {
@@ -856,6 +873,7 @@ input {
     }
 
     &_text {
+        width: 314px;
         color: #9f9f9f;
         @include text();
         font-size: 14px;
@@ -875,6 +893,10 @@ input {
 
     &_item {
         background: #f8f8f8;
+    }
+
+    &_button {
+        margin-top: 48px;
     }
 }
 
@@ -1210,8 +1232,47 @@ input {
         }
     }
 
-    .mid {
-        padding-bottom: 65px;
+    .carousel {
+        &_box {
+            margin-bottom: 0px;
+            height: 565px;
+        }
+
+        &_img {
+            height: 565px;
+        }
+    }
+
+    .cart {
+        padding: 58px 18px 128px 18px;
+        flex-direction: column;
+        gap: 48px;
+
+        &_box-button {
+            gap: 48px;
+        }
+
+        &_shipping {
+            gap: 15px;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    .registration {
+        padding: 40px 16px 96px 16px;
+        gap: 22px;
+
+        &_inf {
+            width: 354px;
+            font-size: 16px;
+        }
+    }
+
+    .description {
+        margin-top: 0px;
+        padding: 65px 0px;
+        width: 100%;
     }
 
     .offer {
@@ -1226,6 +1287,24 @@ input {
     }
 
     .product {
+        &_container {
+            margin-bottom: 74px;
+        }
+
+        &_settings {
+            padding-top: 24px;
+            padding-bottom: 40px;
+            grid-template-columns: repeat(2, 360px);
+            gap: 16px;
+        }
+
+        &_filter {
+            &_summary {
+                padding-right: 0px;
+                padding-left: 0px;
+            }
+        }
+
         &_titl {
             gap: 3px;
         }
@@ -1233,6 +1312,10 @@ input {
         &_list {
             grid-template-columns: repeat(2, 360px);
             gap: 16px;
+        }
+
+        &_button {
+            margin-top: 32px;
         }
     }
 
@@ -1264,6 +1347,21 @@ input {
 }
 
 @media (max-width: 767px) {
+    .close {
+        margin-top: 17px;
+        margin-right: 12px;
+        width: 10px;
+        height: 11px;
+
+        &_desktop {
+            display: none;
+        }
+
+        &_767px {
+            display: block;
+        }
+    }
+
     .header {
         display: flex;
         justify-content: space-around;
@@ -1273,16 +1371,22 @@ input {
         display: none;
     }
 
-    .top {
-        height: 363px;
+    .breadcrumbs {
+        padding-top: 24px;
+        padding-bottom: 46px;
+        flex-direction: column;
+        gap: 32px;
+    }
 
+    .top {
         &_img {
             width: 0;
         }
 
         &_right {
-            width: 100%;
             padding: 0;
+            width: 100%;
+            height: 363px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1303,8 +1407,109 @@ input {
         }
     }
 
+    .carousel {
+        padding: 85px 0px;
+
+        &_box {
+            height: 454px;
+        }
+
+        &_img {
+            height: 454px;
+        }
+    }
+
+    .cart {
+        padding: 39px 8px 96px 8px;
+
+        &_content {
+            gap: 30px;
+        }
+
+        &_item {
+            height: fit-content;
+
+            &_name {
+                margin-bottom: 18px;
+                font-size: 16px;
+            }
+
+            &_box-img {
+                height: 188px;
+            }
+
+            &_img {
+                width: 160px;
+                height: 188px;
+            }
+
+            &_description {
+                padding: 13px 31px 35px 17px;
+                gap: 4px;
+            }
+
+            &_info {
+                font-size: 14px;
+            }
+
+            &_quantity {
+                margin-left: 15px;
+                padding-left: 7px;
+                padding-right: 2px;
+                width: 24px;
+                height: 15px;
+            }
+        }
+
+        &_box-button {
+            margin-top: 0px;
+            gap: 9px;
+        }
+
+        &_button {
+            width: 175px;
+            height: 33px;
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        &_shipping {
+            padding-top: 0px;
+            flex-direction: column;
+            gap: 48px;
+        }
+    }
+
+    .registration {
+        padding: 40px 8px 100px 8px;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
     .mid {
-        padding-bottom: 96px;
+        padding-bottom: 64px;
+    }
+
+    .description {
+        margin-bottom: 64px;
+
+        &_text {
+            width: 326px;
+            line-height: 143.1%;
+        }
+
+        &_price {
+            line-height: 130%;
+        }
+
+        &_img2 {
+            width: 175px;
+        }
+
+        &_menu {
+            gap: 25px;
+        }
     }
 
     .offer {
@@ -1321,7 +1526,36 @@ input {
     }
 
     .product {
-        gap: 40px;
+        &_container {
+            margin-bottom: 64px;
+        }
+
+        &_settings {
+            padding: 24px 8px 32px 8px;
+            grid-template-columns: 38px 260px;
+            gap: 61px;
+        }
+
+        &_filter {
+            &_title,
+            &_desktop {
+                display: none;
+            }
+
+            &_767px {
+                display: block;
+            }
+        }
+
+        &_options {
+            &_subtitle {
+                font-size: 10px;
+            }
+        }
+
+        &_button {
+            margin-top: 40px;
+        }
     }
 
     .product_list {
