@@ -196,10 +196,13 @@ input {
 }
 
 .top {
+    padding-right: calc(50% - 800px);
+    padding-left: calc(50% - 800px);
     display: flex;
 
     &_img {
         width: 50%;
+        background-color: #f1e4e6;
     }
 
     &_right {
@@ -744,6 +747,7 @@ input {
 .product {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     &_description {
         padding: 24px 29px 20px 16px;
@@ -873,8 +877,7 @@ input {
     }
 
     &_text {
-        width: 314px;
-        color: #9f9f9f;
+        color: #5d5d5d;
         @include text();
         font-size: 14px;
         font-weight: 400;
@@ -895,8 +898,29 @@ input {
         background: #f8f8f8;
     }
 
+    &_bg {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
     &_button {
         margin-top: 48px;
+        width: 212px;
+        height: 48px;
+        color: $colorSelectSite;
+        background-color: $colorWhite;
+        border: 1px solid #f16d7f;
+        @include text();
+        font-size: 16px;
+        font-weight: 400;
+        cursor: pointer;
+
+        &:hover {
+            color: $colorWhite;
+            background-color: $colorSelectSite;
+        }
     }
 }
 
@@ -904,6 +928,10 @@ input {
     position: relative;
     width: fit-content;
     display: inline-block;
+
+    &:hover .overlay {
+        opacity: 1;
+    }
 }
 
 .box_img .overlay {
@@ -918,17 +946,6 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.bg_product {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-.box_img:hover .overlay {
-    opacity: 1;
 }
 
 .add_to_cart {
@@ -964,34 +981,6 @@ input {
     @include text();
     font-size: 13px;
     font-weight: 400;
-}
-
-.product_text {
-    color: #5d5d5d;
-    @include text();
-    font-size: 14px;
-    font-weight: 300;
-}
-
-.product_button {
-    display: flex;
-    justify-content: center;
-}
-
-.button {
-    width: 212px;
-    height: 48px;
-    color: $colorSelectSite;
-    border-color: $colorSelectSite;
-    @include text();
-    font-size: 16px;
-    font-weight: 400;
-    cursor: pointer;
-}
-
-.button:hover {
-    color: $colorWhite;
-    background-color: $colorSelectSite;
 }
 
 .bottom {

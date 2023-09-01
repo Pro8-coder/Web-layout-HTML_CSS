@@ -193,10 +193,13 @@ input {
 }
 
 .top {
+  padding-right: calc(50% - 800px);
+  padding-left: calc(50% - 800px);
   display: flex;
 }
 .top_img {
   width: 50%;
+  background-color: #f1e4e6;
 }
 .top_right {
   padding-left: 5%;
@@ -750,6 +753,7 @@ input {
 .product {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .product_description {
   padding: 24px 29px 20px 16px;
@@ -873,8 +877,7 @@ input {
   font-weight: 400;
 }
 .product_text {
-  width: 314px;
-  color: #9f9f9f;
+  color: #5d5d5d;
   font-family: Lato;
   font-style: normal;
   line-height: normal;
@@ -898,8 +901,29 @@ input {
 .product_item {
   background: #f8f8f8;
 }
+.product_bg {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}
 .product_button {
   margin-top: 48px;
+  width: 212px;
+  height: 48px;
+  color: #f16d7f;
+  background-color: #fff;
+  border: 1px solid #f16d7f;
+  font-family: Lato;
+  font-style: normal;
+  line-height: normal;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.product_button:hover {
+  color: #fff;
+  background-color: #f16d7f;
 }
 
 .box_img {
@@ -907,6 +931,9 @@ input {
   width: -moz-fit-content;
   width: fit-content;
   display: inline-block;
+}
+.box_img:hover .overlay {
+  opacity: 1;
 }
 
 .box_img .overlay {
@@ -921,17 +948,6 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.bg_product {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-.box_img:hover .overlay {
-  opacity: 1;
 }
 
 .add_to_cart {
@@ -968,38 +984,6 @@ input {
   line-height: normal;
   font-size: 13px;
   font-weight: 400;
-}
-
-.product_text {
-  color: #5d5d5d;
-  font-family: Lato;
-  font-style: normal;
-  line-height: normal;
-  font-size: 14px;
-  font-weight: 300;
-}
-
-.product_button {
-  display: flex;
-  justify-content: center;
-}
-
-.button {
-  width: 212px;
-  height: 48px;
-  color: #f16d7f;
-  border-color: #f16d7f;
-  font-family: Lato;
-  font-style: normal;
-  line-height: normal;
-  font-size: 16px;
-  font-weight: 400;
-  cursor: pointer;
-}
-
-.button:hover {
-  color: #fff;
-  background-color: #f16d7f;
 }
 
 .bottom {
