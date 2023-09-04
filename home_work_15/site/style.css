@@ -15,16 +15,14 @@ input {
   outline: none;
 }
 
-.close {
-  display: flex;
+.close_position {
   margin-top: 28px;
   margin-right: 22px;
-  width: 18px;
-  height: 18px;
   cursor: pointer;
 }
-.close_767px {
-  display: none;
+.close_size {
+  width: 18px;
+  height: 18px;
 }
 
 .price {
@@ -1314,17 +1312,13 @@ input {
   }
 }
 @media (max-width: 767px) {
-  .close {
+  .close_position {
     margin-top: 17px;
     margin-right: 12px;
+  }
+  .close_size {
     width: 10px;
     height: 11px;
-  }
-  .close_desktop {
-    display: none;
-  }
-  .close_767px {
-    display: block;
   }
   .header {
     display: flex;
