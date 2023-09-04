@@ -110,6 +110,7 @@ input {
         &_prod-filter {
             border-left: 5px solid $colorSelectSite;
             border-bottom: 1px solid #ebebeb;
+            padding-left: 11px;
         }
 
         &_subtitle {
@@ -769,10 +770,10 @@ input {
 
     &_filter {
         margin-top: -20px;
-        width: 360px;
         position: absolute;
 
         &[open] {
+            width: 360px;
             background-color: $colorWhite;
             z-index: 10000;
             filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
@@ -803,15 +804,24 @@ input {
             fill: black;
         }
 
-        &_767px {
-            display: none;
-        }
-
-        &:hover .product_filter_img {
+        &:hover .product_filter_desktop {
             fill: $colorSelectSite;
         }
 
-        &[open] .product_filter_img {
+        &[open] .product_filter_desktop {
+            fill: $colorSelectSite;
+        }
+
+        &_767px {
+            fill: black;
+            display: none;
+        }
+
+        &:hover .product_filter_767px {
+            fill: $colorSelectSite;
+        }
+
+        &[open] .product_filter_767px {
             fill: $colorSelectSite;
         }
     }
@@ -1526,6 +1536,10 @@ input {
         }
 
         &_filter {
+            &[open] {
+                width: fit-content;
+            }
+
             &_title,
             &_desktop {
                 display: none;
