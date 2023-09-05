@@ -1120,7 +1120,7 @@ input {
     }
 
     &_button {
-        width: 25%;
+        width: 30%;
         border: none;
         border-top-right-radius: 22px;
         border-bottom-right-radius: 22px;
@@ -1139,7 +1139,7 @@ input {
 }
 
 .email {
-    width: 75%;
+    width: 70%;
     border: none;
     border-top-left-radius: 22px;
     border-bottom-left-radius: 22px;
@@ -1553,18 +1553,17 @@ input {
             }
         }
 
+        &_list {
+            padding-left: 8px;
+            padding-right: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
         &_button {
             margin-top: 40px;
         }
-    }
-
-    .product_list {
-        padding-left: 8px;
-        padding-right: 8px;
-        margin-top: 25px;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
     }
 
     .bottom {
@@ -1596,7 +1595,7 @@ input {
     }
 
     .email_form {
-        width: 90%;
+        width: 80vw;
     }
 
     .footer {

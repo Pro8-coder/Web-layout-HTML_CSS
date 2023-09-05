@@ -1113,7 +1113,7 @@ input {
   line-height: 167.2%;
 }
 .subscribe_button {
-  width: 25%;
+  width: 30%;
   border: none;
   border-top-right-radius: 22px;
   border-bottom-right-radius: 22px;
@@ -1133,7 +1133,7 @@ input {
 }
 
 .email {
-  width: 75%;
+  width: 70%;
   border: none;
   border-top-left-radius: 22px;
   border-bottom-left-radius: 22px;
@@ -1470,16 +1470,15 @@ input {
   .product_options_subtitle {
     font-size: 12px;
   }
-  .product_button {
-    margin-top: 40px;
-  }
   .product_list {
     padding-left: 8px;
     padding-right: 8px;
-    margin-top: 25px;
     display: flex;
     flex-direction: column;
     gap: 16px;
+  }
+  .product_button {
+    margin-top: 40px;
   }
   .bottom_advantages {
     padding-bottom: 20%;
@@ -1498,7 +1497,7 @@ input {
     line-height: 153.2%;
   }
   .email_form {
-    width: 90%;
+    width: 80vw;
   }
   .footer {
     height: 14vh;
